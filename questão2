@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+  int a,b,c; // define as variaveis 
+  printf("some dois numeros\n");
+  scanf("%d %d", &a, &b);
+  c = a + b; //realiza uma soma de acordo com os valores que a pessoa escolheu 
+  if(c >= 10) //usei uma estrutura de condição 
+    printf("%d", c + 5);
+  else
+    printf("%d", c + 7);
+  
+  return 0;
+}
