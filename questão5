@@ -1,0 +1,25 @@
+#include <math.h>
+#include <stdio.h>
+int main(void) {
+  float v, vtp8, vp, ap, vtn5, dif;
+  printf("Digite o valor da diaria\n");
+  scanf("%f", &v);
+  // operações matematicas que serão realizadas de acordo com o valor da diaria
+  vp = v * 0.75;
+  ap = 75;
+  vtp8 = ap * 0.8 * vp;
+  vtn5 = ap * 0.5 * v;
+  dif = vtp8 - vtn5;
+
+  printf("O valor da diaria promocional é:%.2f\n", vp);
+  printf("O o valor total arrecadado com 0.8 da ocupação e da diaria "
+         "promocional é:%.2f\n",
+         vtp8);
+  printf(
+      "O valor total arrecadado com 0.5 de ocupação e diaria normal é:%.2f\n",
+      vtn5);
+  printf("a diferença é:%.2f\n", dif);
+  // imprime os valores de acordo com os resultados
+
+  return 0;
+}
