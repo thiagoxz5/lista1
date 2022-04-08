@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void) {
+  int y, x;
+  printf("Digite dois números\n");
+  scanf("%d %d", &x, &y);
+  if (x > y){
+    printf("O maior valor é: %d", x);
+  } else if (x < y){
+    printf("\nO maior valor é: %d", y);
+  }
+}
