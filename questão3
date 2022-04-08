@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+   int ano, idade;
+   char op;
+   printf("Digite seu ano de nascimento\n");
+   scanf("%d", &ano);
+   printf("Já fez aniversário este ano?\n");
+   scanf(" %c", &op);
+   switch (op) //estrutura de seleção, na qual ocorre a avalição da correspondência de uma expressão com as opções disponíveis 
+     {
+       case 's': idade = 2022 - ano;
+                break;
+       case 'n': idade = 2021 - ano;
+                break;
+     }
+  if (idade>=18) {  //estrutura de condição que dependendo do resultado acima imprime a condição que ela se encaixa 
+    printf("Pode tirar a CNH");
+  } else {
+    printf("Não pode retirar a CNH");
+  }
+
+}
