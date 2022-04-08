@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+  float salario;
+  char op;
+  printf("digite seu salario \n");
+  scanf("%f", &salario);
+  printf("Qual o tipo de aumento? \n");
+  scanf(" %c", &op);
+  switch (op) { // Esse é um tipo de estrutura de seleção, na qual ocorre a avaliação da correspondência de uma expressão com as opções disponíveis.
+  case 'A':
+    salario = salario * 1.08;
+    printf("O novo salario é %.2f\n", salario);
+    break;
+  case 'B':
+    salario = salario * 1.11;
+    printf("O novo salario sera de %.2f\n", salario);
+    break;
+  case 'C':
+    if (salario <= 1000) {
+      printf("%f", salario + 350);
+    } else {
+      printf("%f", salario + 200);
+    }
+  }
+}
