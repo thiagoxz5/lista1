@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+  float a, x, b;
+  printf("digite os valores de a e b: ");
+  scanf("%f %f", &a, &b);
+  x = -b/a;
+  if (a == 0){
+    printf("não existe raiz");
+  } else {
+    printf("a raiz é:%.0f", x);
+  }
+  return 0;
+}
