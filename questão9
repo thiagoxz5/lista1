@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+  char op;
+  printf("Digite uma tecla\n");
+  scanf("%c", &op);
+  switch (op){
+    case '>':
+    printf("sinal de menor");
+    break;
+    case '<':
+    printf("sinal de maior");
+    break;
+    case '=':
+    printf("sinal de igual");
+    break;
+    default:
+    printf("outro sinal");
+    break;
+  }
+}
